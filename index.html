@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Exchange</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" />
+      <a>Swap</a>
+      <a>Earn</a>
+      <a>Bridge</a>
+      <a>NFTs</a>
+      <img id="dots3" />
+      <img id="crypto" />
+
+      <button data-modal-target="#modal">Open Modal</button>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Avaible wallets</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div>DeFi Wallet</div>
+          <div>Meta Mask</div>
+          <div>Trust Wallet</div>
+          <div>Phantom</div>
+          <div>WalltConnect</div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </header>
+
+    <main>
+      <section id="swap-container">
+        <label>Pay</label>
+        <br />
+        <input type="text" />
+        <br />
+        <label>Receive</label>
+        <br />
+        <input type="text" />
+        <br />
+        <button id="swap" onclick="connect()">swap</button>
+      </section>
+    </main>
+    <footer>
+      <section id="bTok">
+        <p id="bt">Boosted Tokens</p>
+        <p id="points">Points</p>
+      </section>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
